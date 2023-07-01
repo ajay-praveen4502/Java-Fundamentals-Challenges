@@ -1,0 +1,81 @@
+Two friends are playing a puzzle. They have set of sticks to arrange the puzzle. They need to delete one puzzle to make the correct puzzle. So for making correct puzzle you have to find the position where we have to move off the stick. Help them to correct the puzzle.
+
+Input and Output Format:
+
+Assume that the maximum number of elements in the array is 20.
+
+Refer sample input and output for formatting specifications.
+
+All text in bold corresponds to input and the rest corresponds to output.
+
+ 
+
+Sample Input and Output 1:
+
+Enter the number of elements in the array
+
+5
+
+Enter the elements in the array
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Enter the location where you wish to delete an element
+
+4
+
+Array after deletion is
+
+1
+
+2
+
+3
+
+5
+
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        //creating an bjext for Scanner class
+        Scanner sc = new Scanner(System.in);
+        
+        //initializing the variables for user input
+        System.out.println("Enter the number of elements in the array");
+        //getting user inpur value for size of array
+        int size = sc.nextInt();            //5
+        int [] arr = new int [size];        //creating a new array to get the user values
+        System.out.println("Enter the elements in the array");
+        
+        for (int i  = 0; i< size ; i++){    //0 1 2 3 4
+            arr[i] = sc.nextInt();          //inserting user input values into the neew array
+        }
+        System.out.println("Enter the location where you wish to delete an element");
+        int del = sc.nextInt();             //getting user input for deletion
+        if (del <= size){
+            System.out.println("Array after deletion is");
+            for (int i = 0 ; i<size ; i++){     // 0 1 2 3 4
+                if (i == del-1){
+                    continue;
+                }
+                else{
+                    System.out.println(arr[i]);
+                }
+            }
+        }
+        else{
+            System.out.print("Invalid Input");
+        }
+    }
+}
