@@ -1,0 +1,76 @@
+Raju live with a family.There are four members in his family.Dad Mom Raju and his brother. Ramu live with a family.Dad , Mom, Ramu and his Brother. You have to compare the family members and calculate the members in the family and find the family is same or not.
+
+Input Format:
+
+Input consists of 2n+1 integers. The first integer corresponds to ‘n’ , the size of the array. The next ‘n’ integers correspond to the elements in the first array. The next ‘n’ integers correspond to the elements in the second array.Assume that the maximum value of n is 15.
+
+Output Format:
+
+Print yes if the 2 arrays are the same. Print no if the 2 arrays are different.
+
+Sample Input 1:
+
+5
+
+2
+
+3
+
+6
+
+8
+
+-1
+
+2
+
+3
+
+6
+
+8
+
+-1
+
+Sample Output 1:
+
+yes
+
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        //Creating an object for scanner class
+        Scanner sc = new Scanner(System.in);
+        
+        //initializing the variables for user input
+        int size = sc.nextInt();                //5
+        
+        int [] arr1 = new int [size];           //creating the arrays
+        int [] arr2 = new int [size];
+        boolean result = true;                  //using a boolean variable for the final statement
+        for (int i = 0 ; i < size ; i++){       //0 1 2 3 4
+            arr1[i] = sc.nextInt();             //inserting new value inside the array
+        }
+        for (int i = 0 ; i < size ;i++){        //0 1 2 3 4
+            arr2[i] = sc.nextInt();             //inserting values for 2nd array
+        }
+        for (int i = 0; i < size ; i++){        //0 1 2 3 4
+            if (arr1[i] != arr2[i]){            //changing the boolean value if condition not met and breaking the loop
+                result = false;
+                break;
+            }
+            else{                               //remaining the same if all values reach the condition
+                continue;
+            }
+        }
+        if (result == true){
+            System.out.print("yes");
+        }
+        else{
+            System.out.print("no");
+        }
+    }
+}
