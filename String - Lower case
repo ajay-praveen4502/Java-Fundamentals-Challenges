@@ -1,0 +1,26 @@
+Write a program to change the given string to lowercase using string library functions:
+
+Input Format:
+
+Input consist of 1 string.
+Sample Input & Output:
+
+HEllO
+
+hello
+
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        //creating an object for scanner class
+        Scanner sc = new Scanner(System.in);
+        
+        String input = sc.nextLine();
+        
+        String result = input.toLowerCase();
+        System.out.print(result);
+    }
+}
