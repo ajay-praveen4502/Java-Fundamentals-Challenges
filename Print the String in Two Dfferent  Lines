@@ -1,0 +1,25 @@
+Write a program to scan the string from the user and to print it.
+
+Input Format:
+
+Input consist of 1 string.
+Sample Input & Output:
+
+Hello World
+
+The string is Hello World
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        //creating an object for scanner class
+        Scanner sc=  new Scanner(System.in);
+        
+        //initializing the variables and getting user input
+        String input = sc.nextLine();
+        
+        System.out.print("The string is "+ input);
+    }
+}
