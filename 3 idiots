@@ -1,0 +1,55 @@
+Ajay, Binoy and Chandru were very close friends at school. They were very good in Mathematics and they were the pet students of Emily Mam. Their gang was known as 3-idiots. Ajay, Binoy and Chandru live in the same locality.
+
+A new student Dinesh joins their class and he wanted to be friends with them. He asked Binoy about his house address. Binoy wanted to test Dinesh's mathematical skills. Binoy told Dinesh that his house is at the midpoint of the line joining Ajay's house and Chandru's house. Dinesh was puzzled. Can you help Dinesh out?
+
+Given the coordinates of the 2 end points of a line (x1,y1) and (x2,y2), write a  program to find the midpoint of the line.
+
+Input Format:
+
+Input consists of 4 integers. The first integer corresponds to x1 . The second integer corresponds to y1. The third and fouth integers correspond to x2 and y2 respectively.
+
+Output Format:
+
+Refer Sample Input and Output for exact formatting specifications.
+
+[All floating point values are displayed correct to 1 decimal place]
+
+Sample Input and Output:
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+2
+
+4
+
+10
+
+15
+
+Binoy's house is located at (6.0,9.5)
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        
+        //initializing the points of the coordinates
+        int x1,y1,x2,y2;
+        double x3,y3;
+        
+        //creating an object for the scanner function
+        Scanner sc = new Scanner(System.in);
+        
+        // getting the user input for the coordinates
+        x1 = sc.nextInt();
+        y1 = sc.nextInt();
+        x2 = sc.nextInt();
+        y2 = sc.nextInt();
+        
+        // calculating the midpoint of the 2 points
+        x3 = (x1+x2)/2.0;
+        y3 = (y1+y2)/2.0;
+        
+        System.out.print("Binoy's house is located at ("+x3+","+y3+")");
+    }
+}
