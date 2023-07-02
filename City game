@@ -39,13 +39,13 @@ public class Main
 		System.out.println("Enter the number of levels");
 		int num_of_levels = sc.nextInt();
 		System.out.println("Enter the required sum of points");
-		int k = sc.nextInt();
+		int req_sum_of_points = sc.nextInt();
 		
-		if (k % n == 0){	//
-		    System.out.print("The minimum number of levels is "+ n);
+		if (req_sum_of_points % num_of_levels == 0){	//
+		    System.out.print("The minimum number of levels is "+ num_of_levels);
 		}
 		else{
-		    System.out.print("The minimum number of levels is "+(k%n));
+		    System.out.print("The minimum number of levels is "+(req_sum_of_points%num_of_levels));
 		}
 	}
 }
