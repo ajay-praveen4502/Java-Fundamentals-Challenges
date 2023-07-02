@@ -1,53 +1,34 @@
-Two friends are playing a puzzle. They have set of sticks to arrange the puzzle. They need to delete one puzzle to make the correct puzzle. So for making correct puzzle you have to find the position where we have to move off the stick. Help them to correct the puzzle.
+/*Two friends are playing a puzzle. They have set of sticks to arrange the puzzle. 
+They need to delete one puzzle to make the correct puzzle. 
+So for making correct puzzle you have to find the position where we have to move off the stick. 
+Help them to correct the puzzle.
 
-Input and Output Format:
-
-Assume that the maximum number of elements in the array is 20.
-
-Refer sample input and output for formatting specifications.
-
-All text in bold corresponds to input and the rest corresponds to output.
-
- 
-
-Sample Input and Output 1:
+Sample Input and Output :
 
 Enter the number of elements in the array
-
 5
 
 Enter the elements in the array
-
 1
-
 2
-
 3
-
 4
-
 5
 
 Enter the location where you wish to delete an element
-
 4
 
 Array after deletion is
-
 1
-
 2
-
 3
-
 5
+*/
 
 import java.util.Scanner;
 
-public class Main
-{
-    public static void main(String[] args)
-    {
+public class Main{
+    public static void main(String[] args){
         //creating an bjext for Scanner class
         Scanner sc = new Scanner(System.in);
         
